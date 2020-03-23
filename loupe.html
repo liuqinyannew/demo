@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			section{
+				width: 1460px;
+				/* height: 1500px; */
+				margin: 0px auto;
+			}
+			#section-a{
+				height: 50px;
+				line-height: 50px;
+			}
+			#section-a>a:first-child{
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				color: white;
+				background-color: #000000;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 10px;
+				font-size: 10px;
+			}
+			#section-b{
+				width: 1200px;
+				height: 650px;
+				margin: 0px auto;
+				display: flex;
+				padding-top: 40px;
+				border-bottom: #000000 1px solid;
+				position: relative;
+			}
+			#section-b>div:nth-child(1){
+				width: 80px;
+				height: 440px;
+			}
+			#section-b>div:nth-child(1)>img{
+				display: block;
+				width: 80px;
+				height: 80px;
+				margin-bottom: 10px;
+				border: 1px solid gainsboro;
+			}
+			#section-b>div:nth-child(2){
+				width: 566px;
+				height: 566px;
+				margin-left: 20px;
+				border: 1px solid gainsboro;
+				position: relative;
+				background-image: url(img/color_wblu_1.jpg);
+				background-size: 566px 566px;
+				
+			}
+			#section-b>div:nth-child(2) div{
+				width: 300px;
+				height: 500px;
+				background-color: gainsboro;
+				position: absolute;
+				top: 0px;
+				opacity: 0.2;
+			}
+			#section-b>div:nth-child(3){
+				width:430px;
+				height: 520px;
+				margin-left: 20px;
+				border-bottom: gainsboro 1px solid;
+			}
+			#section-b>div:nth-child(3)>div:first-child{
+				border-bottom: #000000 1px solid;
+				height: 200px;
+			}
+			#section-b>div:nth-child(3)>div:first-child img{
+				display: block;
+				width: 120px;
+				height: 30px;
+			}
+			#section-bSpana{
+				font-size: 30px;
+				font-weight: 600;
+			}
+			#section-bSpanb{
+				font-size: 30px;
+				color: red;
+				font-weight: 600;
+				position: relative;
+			}
+			#color img{
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				border: gainsboro 1px  solid;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			#size{
+				width: 300px;
+				text-align: center;
+				position: absolute;
+				top: 550px;
+				display: none;
+			}
+			#size td{
+				width: 60px;
+				height: 40px;
+			}
+			#sizeOne{
+				width: 300px;
+				height: 30px;
+				border-radius: 5px;
+				border: 1px gainsboro solid;
+				margin-top: 10px;
+			}
+			#sizeTwo{
+				width: 30px;
+				height: 30px;
+				border: 0px;
+				background-color: white;
+				outline: none;
+			}
+			#sizeThree{
+				display: inline-block;
+				width: 30px;
+				height: 26px;
+				text-align: center;
+				border-left: 1px gainsboro solid;
+				border-right:  1px gainsboro solid;
+			}
+			#sizeFore{
+				width: 30px;
+				height: 30px;
+				border: 0px;
+				background-color: white;
+				outline: none;
+			}
+			#sizeFiv{
+				display: inline-block;
+				border: 1px gainsboro solid;
+				margin-top: 10px;
+			}
+			#sizeButtona{
+				width: 200px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				background-color: #000000;
+				color: white;
+				border: 0px;
+				border-radius: 5px;
+				outline: none;
+			}
+			#sizeButtonb{
+				width: 200px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				background-color: red;
+				color: white;
+				border: 0px;
+				border-radius: 5px;
+				outline: none;
+			}
+			#right{
+				text-align: right;
+				padding-right: 10px;
+			}
+			#section-c{
+				width: 1200px;
+				height: 550px;
+				border-bottom: gray 1px solid;
+				margin: 0px auto;
+				display: flex;
+			}
+			#section-c>div:first-child{
+				width: 400px;
+				height: 400px;
+			}
+			#section-c img{
+				width: 100%;
+				height: 100%;
+			}
+			#section-c>div:last-child{
+				width: 800px;
+				height: 550px;
+				padding-left: 20px;
+			}
+			#section-c>div:last-child>span{
+				display: inline-block;
+				margin-top: 50px;
+				font-size: 12px;
+				color: gray;
+			}
+			#section-d{
+				width: 1200px;
+				margin: 0px auto;
+			}
+			#section-d h1{
+				text-align: center;
+			}
+			#section-d div{
+				display: flex;
+			}
+			#section-da{
+				width: 300px;
+				height: 400px;
+			}
+			#section-da img{
+				display: inline-block;
+				width: 300px;
+				height: 200px;
+			}
+			#section-da>span:nth-of-type(1){
+				display: block;
+			}
+			#section-b-sapn span{
+				display: inline-block;
+				height: 32px;
+				line-height: 30px;
+			}
+			#section-b>div:nth-of-type(4){
+				width:430px ;
+				height: 520px;
+				position: absolute;
+				background-color: white;
+				right: 82px;
+				background-image: url(img/color_wblu_1.jpg);
+				background-size:800px 600px ;
+				background-repeat: no-repeat;
+				border: 1px gainsboro solid;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header"></div>
+		<section>
+			<div id="section-a">
+				<a href="">&lt;</a>
+				<a href="">男子</a>| <a href="">鞋类</a>| <a href="">时尚运动鞋</a>| STAMINA
+			</div>
+			<div id="section-b">
+				<div id="img">
+					<img src="img/color_wblu_1(1).jpg" >
+					<img src="img/color_wblu_2(1).jpg" >
+					<img src="img/color_wblu_3.jpg" >
+					<img src="img/color_wblu_4.jpg" >
+					<img src="img/color_wblu_5.jpg" >
+				</div>
+				<div id="small">
+					
+					<div id="mask"></div>
+				</div>
+				<div>
+					<div>
+						<img src="img/new.png" >
+						<h1>STAMINA</h1>
+						<p>男子时尚运动鞋</p>
+						<span id="section-bSpana"><del>¥599.00</del></span>
+						<span id="section-bSpanb"> ¥539.00 </span><br>
+					</div>
+					<div id="section-b-sapn">
+						<span>货号： 999307</span><br>
+						<span>颜色 : 白色/蓝色</span>
+						<div id="color">
+							<img src="img/detail_1.jpg" ><img src="img/detail_2.jpg" ><img src="img/detail_3.jpg" ><img src="img/detail_4.jpg" >
+						</div>
+						<input type="text" value="尺码" id="sizeOne">
+						<span id="sizeFiv">
+							<button type="button" id="sizeTwo">-</button>
+							<span id="sizeThree">1</span>
+							<button type="button" id="sizeFore">+</button>
+						</span><br>
+						<span><a href="">尺码对照表</a></span><br>
+						<input type="button" value="加入购物车" id="sizeButtona">
+						&nbsp;&nbsp;
+						<input type="button" value="立即购买" id="sizeButtonb">
+						<p id="right"><a href="">分享</a>&nbsp;&nbsp;<a href="">手机购买</a></p>
+						<div id="size">
+							<table border="1" cellspacing="0" cellpadding="0" >
+								<tr>
+									<td>39</td>
+									<td>39.5</td>
+									<td>40</td>
+									<td>41</td>
+									<td>41.5</td>
+								</tr>
+								<tr>
+									<td>42</td>
+									<td>42.5</td>
+									<td>43</td>
+									<td>44</td>
+									<td>45</td>
+								</tr>
+								<tr>
+									<td>45.5</td>
+									<td>46</td>
+									<td>47</td>
+									<td>48</td>
+									<td>49</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="big"></div>
+			</div>
+			<div id="section-c">
+				<div>
+					<img src="img/color_wht_1.jpg" >
+				</div>
+				<div>
+					<h1>细节加持，质感繁复</h1>
+					男士复古绑带运动鞋，鞋面采用网布、人造皮革、网布拼接而成，复古经典的鞋面设计，强调细节与质感，多种材质的繁复拼接，颇具质感的蛇皮纹路细节加持，打造潮流个性气息
+					<h4>新潮前卫</h4>
+					鞋底采用EVA/橡胶材料，轻量设计，EVA材质鞋底舒适缓震，橡胶加固着力点加强耐磨性能，厚底增高，外形新潮前卫
+					<h4>潮流个性</h4>
+					鞋面采用网布、人造皮革、网布拼接而成，复古经典的鞋面设计，强调细节与质感，多种材质的繁复拼接，颇具质感的蛇皮纹路细节加持，打造潮流个性气息
+					<h4>舒适脚感</h4>
+					使用AIR-COOLED透气记忆鞋垫，集合SKECHERS多种鞋垫技术，提供更好的舒适、支持和透气性<br>
+					<span>
+						敬请注意，同款但不同配色的商品有可能在材质等方面存在些许差异；商品图片均为官方拍摄，手机或电脑等其他显示设备可能会造成色差；页面显示的尺码数据均为手工测量，与收到商品可能存在一定的误差值属于正常情况；本页面中的商品介绍内容仅供参考，商品具体信息请以收到的实物为准。另，内衣类商品不提供试穿服务，商品一经签收无质量问题不提供退换货服务，给您造成的不便望您谅解。
+					</span>
+				</div>
+			</div>
+		</section>
+		<footer></footer>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	$("#header").load("header.html",function(){});
+	$("footer").load("foot.html",function(){});
+		class Waterfull{
+			constructor(newMask,newSmall,newBig) {
+			    this.oMask=newMask
+				this.oSmall=newSmall
+				this.oBig=newBig
+			}
+			mouseover(){
+				let that=this;
+				this.oSmall.onmouseover=function(){
+					that.oMask.style.display="block";
+					that.oBig.style.display="block";
+				}
+			}
+			mouseout(){
+				let that=this;
+				this.oSmall.onmouseout=function(){
+					that.oMask.style.display="none";
+					that.oBig.style.display="none";
+					}
+			}
+			mousemove(){
+				let that = this;
+				
+				this.oSmall.onmousemove=function(evt){
+					
+					let e = evt || event;
+					
+					let left=e.pageX-this.offsetLeft-that.oMask.offsetWidth/2;
+					
+					let top=e.pageY-this.offsetTop-that.oMask.offsetHeight/2;
+					
+					let maxLeft=this.offsetWidth-that.oMask.offsetWidth;
+					let maxHeight=this.offsetHeight-that.oMask.offsetHeight;
+					if(left<0){
+						left=0;
+						}
+						if(top<0){
+							top=0;
+						}
+						if(left>maxLeft){
+							left=maxLeft;
+						}
+						if(top>maxHeight){
+							top=maxHeight;
+						}
+					that.oMask.style.left=left+"px";
+					that.oMask.style.top=top+"px";
+					
+					let x=that.oBig.offsetWidth*left/that.oMask.offsetWidth;
+					let y=that.oBig.offsetHeight*top/that.oMask.offsetHeight;
+					that.oBig.style.backgroundPositionX=-x+"px";
+					that.oBig.style.backgroundPositionY=-y+"px";
+				}
+			}
+		}
+		let mak=document.querySelector("#mask");
+		let sm=document.querySelector("#small");
+		let bg=document.querySelector("#big");
+		let m=new Waterfull(mak,sm,bg);
+		m.mouseover();
+		m.mouseout();
+		m.mousemove();
+	$("#img img").eq(0).click(function(){
+		$("#small").css({backgroundImage:" url(img/color_wblu_1.jpg)"});
+		$("#big").css({backgroundImage:" url(img/color_wblu_1.jpg)"})
+	})
+	$("#img img").eq(1).click(function(){
+		$("#small").css({backgroundImage:" url(img/color_wblu_2.jpg)"});
+		$("#big").css({backgroundImage:" url(img/color_wblu_2.jpg)"})
+	})
+	$("#img img").eq(2).click(function(){
+		$("#small").css({backgroundImage:" url(img/color_wblu_3.jpg)"});
+		$("#big").css({backgroundImage:" url(img/color_wblu_3.jpg)"})
+	})
+	$("#img img").eq(3).click(function(){
+		$("#small").css({backgroundImage:" url(img/color_wblu_4.jpg)"});
+		$("#big").css({backgroundImage:" url(img/color_wblu_4.jpg)"})
+	})
+	$("#img img").eq(4).click(function(){
+		$("#small").css({backgroundImage:" url(img/color_wblu_5.jpg)"});
+		$("#big").css({backgroundImage:" url(img/color_wblu_5.jpg)"})
+	})
+	let content=1;
+	$("#sizeTwo").click(function(){
+		content--;
+		if(content<=1){
+			content=1;
+		}
+		$("#sizeThree").html(content);
+	})
+	$("#sizeFore").click(function(){
+		content++;
+		$("#sizeThree").html(content);
+	})
+</script>
+<script src="page-method.js"></script>

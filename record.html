@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <link rel="icon" href="img/111.png.ico" type="image/x-icon"/> <-->
+			<!-- <link rel="shortcut icon" href="img/bitbug_favicon.ico"> -->
+		</-->
+		<meta charset="utf-8">
+		<title>SKECHERS(斯凯奇)中国官网-来自美国的运动休闲品牌</title>
+		<!-- <link rel="stylesheet" type="text/css" href="h"/> -->
+		<style>
+			section{
+				width: 1200px;
+				height: 550px;
+				display: flex;
+				box-sizing: border-box;
+				padding-top: 40px;
+			}
+			section>div:first-child{
+				width: 700px;
+				height: 500px;
+				border-right: 1px solid #000000;
+			}
+			section>div:last-child{
+				width: 500px;
+				height: 450px;
+				box-sizing: border-box;
+				padding-left: 100px;
+				padding-top: 100px;
+			}
+			section>div:last-child p{
+				height: 30px;
+			}
+			section>div:last-child a{
+				display: inline-block;
+				width: 150px;
+				height: 40px;
+				background-color: #000000;
+				color: white;
+				border: 0px;
+				line-height: 40px;
+				text-align: center;
+				margin-top: 20px;
+			}
+			#section-record>div:nth-of-type(1){
+				text-align: center;
+				line-height: 60px;
+				height: 60px;
+				width: 600px;
+				margin: 0px auto;
+				border-bottom: 1px solid gainsboro;
+			}
+			#section-record>div:nth-of-type(2){
+				width: 550px;
+				margin: 0px auto;
+				text-align: center;
+				position: relative;
+			}
+			#section-record>div:nth-child(1) button{
+				width: 150px;
+				height: 50px;
+				background-color: white;
+				border: 0px;
+				outline: none;
+				font-size: 20px;
+				cursor: pointer;
+			}
+			#section-record>div:nth-child(2)>div:nth-child(1){
+				width: 600px;
+				height: 250px;
+				position: absolute;
+				display: block;
+			}
+			#section-record>div:nth-child(2)>div:nth-child(1) input{
+				width: 550px;
+				height: 30px;
+				/* margin-top: 30px; */
+			}
+			#section-record>div:nth-child(2)>div:nth-child(1) input:nth-of-type(3){
+				width: 150px;
+				height: 40px;
+				background-color: #000000;
+				color: white;
+				border: 0px;
+				outline: none;
+			}
+			#forget{
+				text-align: right;
+			}
+			#section-record>div:nth-child(2) span{
+				display: block;
+				height: 30px;
+				text-align: left;
+				color: red;
+				font-size: 12px;
+			}
+			#section-record>div:nth-child(2)>div:nth-child(2){
+				width: 600px;
+				height: 250px;
+				position: absolute;
+				display: none;
+			}
+			#section-record>div:nth-child(2)>div:nth-child(2) input:nth-of-type(4){
+				width: 150px;
+				height: 40px;
+				background-color: #000000;
+				color: white;
+				border: 0px;
+				outline: none;
+			}
+			#section-record>div:nth-child(2)>div:nth-child(2) input:nth-of-type(1){
+				width: 550px;
+				height: 30px;
+			}
+			#section-record>div:nth-child(2)>div:nth-child(2) input:nth-of-type(2){
+				width: 400px;
+				height: 30px;
+			}
+			#section-record>div:nth-child(2)>div:nth-child(2) input:nth-of-type(3){
+				width: 120px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				border: 0px;
+				outline: none;
+				margin-left: 30px;
+			}
+			#testing{
+				background-color: #000000;
+				color: white;
+			}
+			#testingDiv{
+				width: 600px;
+				height: 200px;
+				position: absolute;
+				top: 250px;
+			}
+			#testingDiv a{
+				display: inline-block;
+				width: 47px;
+				height: 47px;
+			}
+			#testingDiv a:nth-child(1){
+			background-image: url(img/spritesheet.png);
+			background-position: 169px 176px;
+			}
+			#testingDiv a:nth-child(2){
+			background-image: url(img/spritesheet.png);
+			background-position: 169px 113px;
+			}
+			#testingDiv a:nth-child(3){
+			background-image: url(img/spritesheet.png);
+			background-position: 169px 55px;
+			}
+			.select{
+				border-bottom:2px #0000FF solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header"></div>
+		<section>
+			<div id="section-record">
+				<div>
+					<button class="denglu">密码登录</button>
+					<button class="denglu">验证码登录</button>
+				</div>
+				<div>
+					<div class="record">
+						<form action="" method="post">
+							<span></span>
+							<input type="text" placeholder="请输入您的手机号码/邮箱地址" class="input"><br>
+							<span id="regNum"></span>
+							<input type="text" placeholder="请输入您的密码" class="input"><br>
+							<span id="regPwd"></span>
+							<p id="forget">忘记密码？</p>
+							<input type="submit" value="登录" class="input"/>
+						</form>
+					</div>
+					<div class="record">
+						<form action="" method="post">
+							<span></span>
+							<input type="text" placeholder="请输入您的手机号码*" class="ipt"><br>
+							<span id="phoNum"></span>
+							<input type="text" placeholder="输入您的验证码" class="ipt"><input type="text" value="获取验证码" id="testing"><br>
+							<span id="phoPwd"></span>
+							<input type="submit" value="登录" class="input"/>
+						</form>
+					</div>
+					<div id="testingDiv">
+						<p>或通过以下方式快速登录</p>
+						<p><a href=""></a>&nbsp;&nbsp;&nbsp;<a href=""></a>&nbsp;&nbsp;&nbsp;<a href=""></a></p>
+					</div>
+				</div>
+			</div>
+			<div id="">
+				<p>还不是斯凯奇会员?</p>
+				<p>立即注册，享无限惊喜。</p>
+				<p>· 第一时间接收新品发布及活动折扣信息</p>
+				<p>· 享受SKECHERS的贴心服务</p>
+				<p><a href="register.html">注册</a></p>
+			</div>
+		</section>
+		<footer></footer>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	$("#header").load("header.html",function(){});
+	$("footer").load("foot.html",function(){});
+	let flageNum=false;
+	let flagePwd=false;
+	let flageNuma=false;
+	let flagePwdb=false;
+	$(".input").eq(0).blur(function(){
+		let regNum=/^1(3|5|8)\d{9}$/;
+		if(regNum.test($(this).val())){
+			$("#regNum").html("");
+			flageNum=true;
+		}else if($(this).val()==""){
+			$("#regNum").html("必填字段");
+		}else{
+			$("#regNum").html("请输入电子邮件地址或有效的电话号码。");
+		}
+	});
+	$(".input").eq(1).blur(function(){
+		let regPwdnum=/^\d+$/;
+		let regPwdletters=/^[a-zA-Z]+$/
+		if(regPwdnum.test($(this).val())||regPwdletters.test($(this).val())){
+			$("#regPwd").html("密码必须包含子母和数字");
+		}else if($(this).val()==""){
+			$("#regPwd").html("必填字段");
+		}else{
+			$("#regPwd").html("");
+			flagePwd=true;
+		}
+	});
+	$("form").eq(0).submit(function(){
+		if(flageNum & flagePwd){
+			return true;
+		}else{
+			return false;
+		}
+	})
+	$(".ipt").eq(0).blur(function(){
+		let phoNum=/^1(3|5|8)\d{9}$/;
+		if(phoNum.test($(this).val())){
+			$("#phoNum").html("");
+			flageNuma=true;
+		}else if($(this).val()==""){
+			$("#phoNum").html("必填字段");
+		}else{
+			$("#phoNum").html("请输入一个有效的电话号码。");
+		}
+	});
+	$(".ipt").eq(1).blur(function(){
+		let phoPwd=/^\d{4,}$/;
+		let phoPwda=/^[a-zA-Z]{4,}$/;
+		if($(this).val()==""){
+			$("#phoPwd").html("必填字段");
+		 }else if(phoPwd.test($(this).val())){
+			 $("#phoPwd").html("");
+			 flageNuma=true;
+		 }else if(phoPwda.test($(this).val())){
+			  $("#phoPwd").html("请仅输入数字");
+		 }else{
+			$("#phoPwd").html("请至少输入四个字符");
+		}
+	});
+	$("form").eq(1).submit(function(){
+		if(flageNuma & flagePwdb){
+			return true;
+		}else{
+			return false;
+		}
+	})
+	$(".denglu").eq(0).click(function(){
+		$(".record").eq(0).css({
+			display:"block"
+		}).next().css({display:"none"})
+	});
+	$(".denglu").eq(1).click(function(){
+		$(".record").eq(1).css({
+			display:"block"
+		}).prev().css({display:"none"})
+	});
+</script>
+<script src="page-method.js"></script>

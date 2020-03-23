@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			section{
+				width: 1200px;
+				margin: 0px auto;
+			}
+			#cartOne{
+				width: 1200px;
+				height: 50px;
+				line-height: 50px;
+			}
+			#cartOne>span{
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				background-color: #000000;
+				color: white;
+				border-radius: 50%;
+				font-size: 10px;
+				text-align: center;
+				line-height: 15px;
+			}
+			#cartTwo{
+				width: 1100px;
+				height: 350px;
+				margin: 0px auto;
+			}
+			#cartTwo img{
+				width: 1100px;
+				height: 350px;
+			}
+			#cartThree{
+				margin-top: 100px;
+				width: 750px;
+				height: 50px;
+				line-height: 50px;
+				border-bottom: 1px gainsboro solid;
+				margin-left: 50px;
+			}
+			#cartThree h1{
+				font-weight: 400;
+				font-size: 22px;
+			}
+			#cartFour{
+				width: 1200px;
+				height: 350px;
+				border-bottom: 1px gainsboro solid;
+				position: relative;
+				
+			}
+			#cartFour>div{
+				width: 350px;
+				height: 400px;
+				background-color: #444;
+				position: absolute;
+				bottom: 30px;
+				right: 0px;
+			}
+			#cartFour>div div{
+				width: 300px;
+				margin: 0px auto;
+				color: white;
+			}
+			#cartFour>div div:first-child{
+				border-bottom: 1px ghostwhite solid;
+			}
+			#cartFour>div div:nth-child(2){
+				width: 300px;
+				height: 50px;
+				line-height: 50px;
+			}
+			#cartFour>div div:nth-child(3){
+				width: 300px;
+				height: 50px;
+				line-height: 50px;
+				display: flex;
+			}
+			#cartFour>div div:nth-child(3) input{
+				width: 200px;
+				height: 30px;
+				border-radius: 3px;
+				outline: none;
+				border: 0px;
+			}
+			#cartFour>div div:nth-child(3) button{
+				display: block;
+				width: 30px;
+				height: 30px;
+				margin-left: 20px;
+				border-radius: 3px;
+				outline: none;
+				border: 0px;
+				font-size: 20px;
+				color: gray;
+				background-color: gainsboro;
+				cursor: pointer;
+			}
+			#cartFour>div div:nth-child(4){
+				width: 300px;
+				height: 50px;
+				line-height: 50px;
+			}
+			#cartFour>div div:nth-child(5){
+				width: 300px;
+				height: 50px;
+				line-height: 50px;
+				border-bottom: 1px gainsboro solid;
+			}
+			#cartFour>div div:nth-child(6){
+				width: 300px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 20px;
+			}
+			
+			#cartFour>div div:nth-child(7){
+				width: 300px;
+				height: 50px;
+				line-height: 50px;
+			}
+			#cartFour>div div:nth-child(7) button{
+				width: 300px;
+				height: 50px;
+				background-color: white;
+				border: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header"></div>
+		<section>
+			<div id="cartOne"><span>&lt;</span>&nbsp;&nbsp;&nbsp;&nbsp;购物车</div>
+			<div id="cartTwo">
+				<img src="img/1024.jpg" >
+			</div>
+			<div id="cartThree">
+				<h1>您的购物车里没有商品</h1>
+			</div>
+			<div id="cartFour">
+				<div>
+					<div><h3>小结信息</h3></div>
+					<div>是否有优惠码</div>
+					<div><input type="text" placeholder="选择或输入优惠码"><button type="button">√</button></div>
+					<div>商品总额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥<span>0</span>.00</div>
+					<div>运费金额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sapn>-</sapn></div>
+					<div>支付总额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥<span>0</span>.00</div>
+					<div><button type="button">提交订单</button></div>
+				</div>
+			</div>
+		</section>
+		<footer></footer>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	$("#header").load("header.html",function(){});
+	$("footer").load("foot.html",function(){});
+</script>
+<script src="page-method.js"></script>

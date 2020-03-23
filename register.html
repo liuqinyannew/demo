@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			section{
+				width: 1400px;
+				height: 1000px;
+				display: flex;
+				margin: 0px auto;
+			}
+			section>div:nth-child(1){
+				width: 600px;
+				height: 500px;
+				text-align:left;
+				margin-top: 70px;
+			}
+			section>div:nth-child(2){
+				width: 800px;
+				height: 500px;
+				text-align: center;
+				border-left:  #000000 1px solid;
+			}
+			section>div:nth-child(2) img{
+				width: 600px;
+				height: 450px;
+				margin-top: 70px;
+				margin-left: 40px;
+			}
+			#register{
+				width: 500px;
+				margin: 0px auto;
+				box-sizing: border-box;
+			}
+			#register-input select{
+				width: 145px;
+				height: 30px;
+				border: 2px gray solid;
+			}
+			#register-input input{
+				margin-top: 25px;
+			/* 	border: 2px gray solid; */
+			}
+			#_phoa{
+				display: inline-block;
+				width: 150px;
+				height: 35px;
+				background-color: #000000;
+				color: white;
+				border: 0px;
+			}
+			._input{
+				width: 440px;
+				height: 30px;
+				border: 2px gray solid;
+			}
+			#_pho{
+				width: 280px;
+				height: 30px;
+			}
+			#register-input span:nth-of-type(1){
+				font-size: 10px;
+			}
+			#register-input span:nth-of-type(2){
+				font-size: 10px;
+				color: red;
+			}
+			#register-input input:nth-of-type(10){
+				margin-left: 150px;
+				width: 120px;
+				height: 40px;
+				background-color: #000000;
+				color: white;
+				border: 0px;
+				font-size: 18px;
+				border-radius: 5px;
+			}
+			#register>div:nth-of-type(1){
+				display: flex;
+			}
+			#register>div:nth-of-type(1)>div:first-child{
+				height: 45px;
+				width: 45px;
+			}
+			#register>div:nth-of-type(1)>div:last-child{
+				padding-left:15px ;
+			}
+			#register>div:nth-of-type(1) img{
+				width: 100%;
+				height: 100%;
+			}
+			#register>div:nth-of-type(3){
+				margin-top: 60px;
+			}
+			#register>div:nth-of-type(3) p{
+				padding-left: 120px;
+			}
+			#recorda{
+				display: inline-block;
+				width: 47px;
+				height: 47px;
+				background-image: url(img/spritesheet.png);
+				background-position: 169px 176px;
+			}
+			#recordb{
+				display: inline-block;
+				width: 47px;
+				height: 47px;
+				background-image: url(img/spritesheet.png);
+				background-position: 169px 113px;
+			}
+			#recordc{
+				display: inline-block;
+				width: 47px;
+				height: 47px;
+				background-image: url(img/spritesheet.png);
+				background-position: 169px 55px;
+			}
+			#recordd{
+				display: inline-block;
+				width: 120px;
+				height: 40px;
+				background-color: black;
+				color: white;
+				line-height: 40px;
+				text-align: center;
+				margin-left: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header"></div>
+		<section>
+			<div>
+				<div id="register">
+					<div>
+						<div><img src="img/sclub-logo.png" ></div>
+						<div>	如您已通过斯凯奇微信公众号注册S-CLUB，<br>
+							无需注册，<a href="record.html">点击这里</a>，可直接登录购物。</div>
+					</div>
+					<div id="register-input">
+						<form action="" method="post" id="submit">
+							<input type="text" placeholder="*姓名" class="_input"><br>
+							<input type="radio">男
+							<input type="radio">女<br>
+							<span>*生日</span><br>
+							<select >
+								<option value="">年</option>
+								<option value="">2019</option>
+								<option value="">2018</option>
+								<option value="">2017</option>
+								<option value="">2016</option>
+								<option value="">2015</option>
+								<option value="">2014</option>
+							</select>
+							<select name="月">
+								<option value="">月</option>
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+								<option value="">6</option>
+							</select>
+							<select name="日">
+								<option value="">日</option>
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+								<option value="">6</option>
+							</select><br>
+							<span>填写生日将会获得生日礼券</span><br>
+							<input type="text" placeholder="手机号码*" class="_input"><br>
+							<input type="text" placeholder="手机验证码*" id="_pho" class="_input">
+							<input type="button"value="获取验证码" id="_phoa">
+							<input type="text" placeholder="密码*" class="_input"><br>
+							<input type="text" placeholder="确认密码" class="_input"><br>
+							<span>*为必填项，请留意</span><br>
+							<input type="checkbox"><span>我接受<a href="">斯凯奇官网服务协议</a>,<a href="">隐私权政 </a>策及通知类邮件</span><br>
+							<input type="submit" value="注册">
+						</form>
+					</div>
+					<div>
+						<p>或通过以下方式快速登录：</p>
+						<p><a href="" id="recorda"></a>&nbsp;&nbsp;&nbsp;<a href="" id="recordb"></a>&nbsp;&nbsp;&nbsp;<a href="" id="recordc"></a></p>
+							已是斯凯奇会员？<a href="record.html" id="recordd">登录</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/640.jpg" ></a>
+			</div>
+		</section>
+		<footer></footer>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	$("#header").load("header.html",function(){});
+	$("footer").load("foot.html",function(){});	
+	let flageCode=false;
+	let flagePho=false;
+	let flagePwd=false;
+	let flagePwda=false;
+	$("._input").eq(1).blur(function(){
+		let regPho=/^1(3|5|7|8{9})$/;
+		if(regPho.test($(this).val())==false && $(this).val()!=""){
+			$(this).val("");
+			$(this).attr('placeholder','请输入正确的字段');
+		}else if(regPho.test($(this).val())==""){
+			$(this).attr('placeholder','必填字符');
+		}else{
+			flagePho=true;
+		}
+			
+	});
+	$("._input").eq(2).blur(function(){
+		let regCode=/^\d{4}$/;
+		if(regCode.test($(this).val())==false && $(this).val()!=""){
+			$(this).val("");
+			$(this).attr('placeholder','请输入正确字段');
+		}else if(regCode.test($(this).val())==""){
+			$(this).attr('placeholder','必填字符');
+		}else{
+			flageCode=true;
+		}
+	});
+	$("._input").eq(3).blur(function(){
+		let regPwdnum=/^\d+$/;
+		let regPwdletters=/^[a-zA-Z]+$/;
+		if(regPwdnum.test($(this).val())||regPwdletters.test($(this).val())){
+			$(this).val("");
+			$(this).attr('placeholder','密码必须包含字母数字');
+		}else if($(this).val()==""){
+			$(this).attr('placeholder','必填字符');
+		}else{
+			flagePwd=true;
+		}
+	})
+	$("._input").eq(4).blur(function(){
+		let regPwdnum=/^\d+$/;
+		let regPwdletters=/^[a-zA-Z]+$/;
+		if(regPwdnum.test($(this).val())||regPwdletters.test($(this).val())){
+			$(this).val("");
+			$(this).attr('placeholder','密码必须包含字母数字');
+		}else if($(this).val()==""){
+			$(this).attr('placeholder','必填字符');
+		}else if($("._input").eq(3).val()!=$(this).val()){
+			$(this).val("");
+			$(this).attr('placeholder','请输入相同的密码值');
+		}else{
+			flagePwda=true;
+		}
+	})
+	$("#submit").submit(function(){
+		if(flagePho && flagePwda && flageCode &&flagePwd){
+			return true;
+		}else{
+			return false;
+		}
+		
+	})
+	$.ajax('',{
+				url:"register.php",
+				data:{
+					username:$("._input").eq(1).val(),
+					userpwd:$("._input").eq(3).val()
+				},
+				type:'post',//HTTP请求类型
+				success:function(str){
+						if(str == 1) {					
+						alert("注册成功");
+						window.location.href='record.html';
+					} else {
+						$(".phoneNumberSpan").html("该手机号已经注册!");
+					}
+				}
+			});
+</script>
+<script src="page-method.js"></script>

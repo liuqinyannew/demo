@@ -1,0 +1,408 @@
+<style>
+	#nav {
+		height: 50px;
+		background-color: gainsboro;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	
+	nav {
+	
+		width: 1500px;
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0px auto;
+	}
+	
+	nav span {
+		display: inline-block;
+		line-height: 50px;
+	}
+	
+	nav a {
+		color: white;
+	}
+	
+	nav a:first-child {
+		margin-right: 25px;
+	}
+	
+	#nav-spana {
+		display: inline-block;
+		width: 13px;
+		height: 14px;
+		background-image: url(img/top-store-icon.png);
+		background-position: 0 0;
+		margin-right: 5px;
+	}
+	
+	#nav-spanb {
+		display: inline-block;
+		width: 16px;
+		height: 14px;
+		background-image: url(img/top-contact-icon.png);
+		background-position: 0 0;
+		margin-right: 5px;
+	}
+	
+	nav span:first-child {
+		margin-left: 30px;
+	}
+	
+	nav span:last-child {
+		margin-right: 30px;
+	}
+	
+	header {
+		height: 80px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		line-height: 80px;
+		border-bottom: #DCDCDC 1px solid;
+		margin: 0px auto;
+		z-index: 6;
+		position: relative;
+	}
+	
+	header a {
+		color: black;
+	}
+	.en {
+		width: 1000px;
+		height: 400px;
+		position: absolute;
+		background-color: #DCDCDC;
+		top: 60px;
+		z-index: 999;
+		display: none;
+	}
+	
+	#headerOne {
+		width: 800px;
+		display: flex;
+		justify-content: space-around;
+		position: relative;
+	}
+	
+	.pull-up {
+		display: inline-block;
+		width: 80px;
+	}
+	
+	.pull-up li {
+		list-style-type: none;
+	}
+	
+	.pull-up-box {
+		width: 1500px;
+		height: 400px;
+		position: absolute;
+		top: 80px;
+		left: 10px;
+		background-color: white;
+		display: none;
+		z-index: 7;
+	}
+	#pull-up-boxa{
+		height: 250px;
+	}
+	#pull-up-boxb{
+		height: 300px;
+	}
+	.boxa {
+		width: 800px;
+		display: flex;
+		float: left;
+		margin-left: 100px;
+	}
+	.boxa span{
+		font-weight: 900;
+		display: inline-block;
+	}
+	.boxa li {
+		width: 250px;
+		height: 30px;
+	}
+	
+	.boxb {
+		float: left;
+		width: 200px;
+		height: 300px;
+		border-left: 1px solid black;
+	}
+	.boxb ul{
+		padding-left: 30px;
+	}
+	.boxb li{
+		width: auto;
+		height: auto;
+	}
+	.boxc{
+		display: flex;
+		justify-content: space-around;
+	}
+	.boxc img{
+		display: block;
+		width: 270px;
+		height: 150px;
+	}
+	.boxc span{
+		margin-left: 150px;
+	}
+	#headerTwo {
+		width: 500px;
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	#headerTwo input {
+		width: 140px;
+		height: 40px;
+		border: 1px solid gainsboro;
+		border-radius: 10px;
+		outline: none;
+	}
+	
+	#headerTwo-a {
+		display: block;
+		position: absolute;
+		left: 110px;
+		top: 3px;
+	}
+	
+	#headerTwo span:first-child {
+		position: relative;
+	}
+	
+	#headerTwo span:last-child {
+		position: relative;
+	}
+	
+	#headerTwo-c {
+		background-image: url(img/car.png);
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-size: 100% 100%;
+		position: absolute;
+		left: -30px;
+		top: 30px;
+	}
+	
+</style>
+			
+			
+			<div id="nav">
+				<nav>
+					<span>满499减50、满649减70、满849减100、正价标签商品除外</span>
+					<span>
+						<a href="#"><span id="nav-spana"></span>线下门店</a>
+						<a href="#"><span id="nav-spanb"></span>在线客服</a>
+					</span>
+				</nav>
+			</div>
+			<header>
+			<div id="headerOne">
+				<a href="page.html"><img src="img/logo.png"></a>
+				<ul>
+					<li class="pull-up"><a href="#" >男子
+							<div class="pull-up-box">
+								<div class="boxa">
+									<ul>
+										<li><a href="#"><span>最新活动</span></a></li>
+										<li><a href="#">最新上市</a></li>
+									</ul>
+									<ul>
+										<li><a href=""><span>鞋类</span></a></li>
+										<li><a href="">时尚运动鞋</a></li>
+										<li><a href="">休闲运动鞋</a></li>
+										<li><a href="">跑步鞋</a></li>
+										<li><a href="">健步鞋</a></li>
+										<li><a href="">休闲鞋</a></li>
+										<li><a href="">凉鞋</a></li>
+										<li><a href="">靴子</a></li>
+									</ul>
+									<ul>
+										<li><a href=""><span>服饰</span></a></li>
+										<li><a href="">上衣/T恤</a></li>
+										<li><a href="">连帽衫/卫衣</a></li>
+										<li><a href="">外套/夹克</a></li>
+										<li><a href="">长裤/紧身裤</a></li>
+										<li><a href="">短裤</a></li>
+										<li><a href="">袜子</a></li>
+										<li><a href="">配件/装备</a></li>
+									</ul>
+								</div>
+								<div class="boxb">
+									<ul>
+										<li><span>精选系列</span></li>
+										<li><a href=""><img src="img/1.jpg"></a></li>
+										<li><a href="">查看详情</a></li>
+									</ul>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li  class="pull-up"><a href="#">女子
+							<div class="pull-up-box">
+								<div class="boxa">
+									<ul>
+										<li><a href="#"><span>最新活动</span></a></li>
+										<li><a href="#">最新上市</a></li>
+									</ul>
+									<ul>
+										<li><a href=""><span>鞋类</span></a></li>
+										<li><a href="">时尚运动鞋</a></li>
+										<li><a href="">休闲运动鞋</a></li>
+										<li><a href="">跑步鞋</a></li>
+										<li><a href="">健步鞋</a></li>
+										<li><a href="">休闲鞋</a></li>
+										<li><a href="">凉鞋</a></li>
+										<li><a href="">靴子</a></li>
+									</ul>
+									<ul>
+										<li><a href=""><span>服饰</span></a></li>
+										<li><a href="">上衣/T恤</a></li>
+										<li><a href="">连帽衫/卫衣</a></li>
+										<li><a href="">外套/夹克</a></li>
+										<li><a href="">长裤/紧身裤</a></li>
+										<li><a href="">短裤</a></li>
+										<li><a href="">袜子</a></li>
+										<li><a href="">配件/装备</a></li>
+									</ul>
+								</div>
+								<div class="boxb">
+									<ul>
+										<li><span>精选系列</span></li>
+										<li><a href=""><img src="img/2.jpg"></a></li>
+										<li><a href="">查看详情</a></li>
+									</ul>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="pull-up"><a href="#" >男童
+						<div class="pull-up-box">
+							<div class="boxa">
+								<ul>
+									<li><a href="#"><span>最新活动</span></a></li>
+									<li><a href="#">最新上市</a></li>
+								</ul>
+								<ul>
+									<li><a href=""><span>鞋类</span></a></li>
+									<li><a href="">时尚运动鞋</a></li>
+									<li><a href="">休闲运动鞋</a></li>
+									<li><a href="">跑步鞋</a></li>
+									<li><a href="">健步鞋</a></li>
+									<li><a href="">休闲鞋</a></li>
+									<li><a href="">凉鞋</a></li>
+									<li><a href="">靴子</a></li>
+								</ul>
+								<ul>
+									<li><a href=""><span>服饰</span></a></li>
+									<li><a href="">运动内衣</a></li>
+									<li><a href="">上衣/T恤</a></li>
+									<li><a href="">连帽衫/卫衣</a></li>
+									<li><a href="">外套/夹克</a></li>
+									<li><a href="">连衣裙/半身裙</a></li>
+									<li><a href="">短裤</a></li>
+									<li><a href="">袜子</a></li>
+									<li><a href="">配件/装备</a></li>
+								</ul>
+							</div>
+							<div class="boxb">
+								<ul>
+									<li><span>精选系列</span></li>
+									<li><a href=""><img src="img/4.jpg"></a></li>
+									<li><a href="">查看详情</a></li>
+								</ul>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li class="pull-up"><a href="#" >女童
+						<div class="pull-up-box">
+							<div class="boxa">
+								<ul>
+									<li><a href="#"><span>最新活动</span></a></li>
+									<li><a href="#">最新上市</a></li>
+								</ul>
+								<ul>
+									<li><a href=""><span>鞋类</span></a></li>
+									<li><a href="">时尚运动鞋</a></li>
+									<li><a href="">休闲运动鞋</a></li>
+									<li><a href="">跑步鞋</a></li>
+									<li><a href="">健步鞋</a></li>
+									<li><a href="">休闲鞋</a></li>
+									<li><a href="">凉鞋</a></li>
+									<li><a href="">靴子</a></li>
+								</ul>
+								<ul>
+									<li><a href=""><span>服饰</span></a></li>
+									<li><a href="">运动内衣</a></li>
+									<li><a href="">上衣/T恤</a></li>
+									<li><a href="">连帽衫/卫衣</a></li>
+									<li><a href="">外套/夹克</a></li>
+									<li><a href="">连衣裙/半身裙</a></li>
+									<li><a href="">短裤</a></li>
+									<li><a href="">袜子</a></li>
+									<li><a href="">配件/装备</a></li>
+								</ul>
+							</div>
+							<div class="boxb">
+								<ul>
+									<li><span>精选系列</span></li>
+									<li><a href=""><img src="img/3.jpg"></a></li>
+									<li><a href="">查看详情</a></li>
+								</ul>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li class="pull-up"><a href="#" >主推系列
+						<div class="pull-up-box" id="pull-up-boxb">
+							<div class="boxc">
+								<a href=""><img src="img/mp1.jpg" ><span>D'LITES ></span></a>
+								<a href=""><img src="img/mp2.jpg" ><span>GO RUN ></span></a>
+								<a href=""><img src="img/mp3.jpg" ><span>SPORTS ></span></a>
+								<a href=""><img src="img/mp4.jpg" ><span>MARK NASON ></span></a>
+								<a href=""><img src="img/mp5.jpg" ><span>ENERGY LIGHT ></span></a>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li  class="pull-up"><a href="#">明星同款
+						<div class="pull-up-box" id="pull-up-boxa">
+							<div class="boxc">
+								<a href=""><img src="img/star1.jpg" ><span>杨紫 ></span></a>
+								<a href=""><img src="img/star4.jpg" ><span>唐嫣 ></span></a>
+								<a href=""><img src="img/star3.jpg" ><span>吴尊 ></span></a>
+							</div>
+						</div>
+						</a>
+					</li>
+				</ul>
+				<div class="en">
+
+				</div>
+			</div>
+			<div id="headerTwo">
+				<span>
+					<input type="text" class="search_input" placeholder="请输入搜索词" />
+					<a href="#" id="headerTwo-a"><img src="img/search.png"></a>
+				</span>
+				<span>
+					<a href="#" id="headerTwo-b"></a>
+					<a href="record.html">登录</a>&nbsp;|
+					<a href="register.html">注册</a>
+				</span>
+				<span>
+					<a href="#" id="headerTwo-c"></a>
+					<a href="#">购物车</a>
+				</span>
+			</div>
+		</header>
